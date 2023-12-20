@@ -3,7 +3,6 @@ import 'package:counterofferv1/compornents/appbar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:counterofferv1/provider/river1.dart';
-import 'package:go_router/go_router.dart';
 import 'package:counterofferv1/model/user1.dart';
 
 class _Header extends StatelessWidget {
@@ -250,12 +249,6 @@ class OtherUser extends ConsumerWidget {
             ),
           ),
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        child: const Icon(Icons.edit),
-        onPressed: () {
-          GoRouter.of(context).go('/account/addaccount');
-        },
       ),
     );
   }
