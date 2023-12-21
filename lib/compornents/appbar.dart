@@ -12,21 +12,18 @@ class AppBarComponentWidget extends StatelessWidget implements PreferredSizeWidg
       title: Text(
         title,
         style: const TextStyle(
-          color: Colors.black,
           fontWeight: FontWeight.bold,
           fontSize: 20,
         ),
       ),
       flexibleSpace: Container(
         decoration: const BoxDecoration(
-          color: Colors.white,
         ),
       ),
       bottom: PreferredSize(
         preferredSize: const Size.fromHeight(5),
         child: Container(
           height: 10,
-          color: Colors.white,
         ),
       ),
     );
