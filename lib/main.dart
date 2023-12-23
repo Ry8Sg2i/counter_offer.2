@@ -1,10 +1,12 @@
 import 'package:counterofferv1/colors/color_schemes.g.dart';
+import 'package:counterofferv1/provider/river1.dart';
 import 'package:counterofferv1/route/router.dart';
 import 'package:flutter/material.dart';
 // ignore: depend_on_referenced_packages
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+
 
 void main()  async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -19,6 +21,7 @@ class CounterOffer extends ConsumerWidget {
   
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final themeMode = ref.watch(themeModeProvider.notifier);
     return MaterialApp.router(
       // アプリ名
         darkTheme: ThemeData(
@@ -37,6 +40,7 @@ class CounterOffer extends ConsumerWidget {
             surfaceTintColor: Colors.transparent,
           ),
         ),
+        themeMode: themeMode.state,
         routerConfig: goRouter,
     );
   }
