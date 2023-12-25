@@ -31,6 +31,17 @@ class SettingPage extends ConsumerWidget {
                 ),
               ),
             ),
+            Card(
+              child: SizedBox(
+                width: double.infinity,
+                child: TextButton(
+                  onPressed: () {
+                    GoRouter.of(context).go('/setting/colorsetting');
+                  },
+                  child: const Text('Colorsetting')
+                ),
+              ),
+            ),
           ],
         ),
       ),
