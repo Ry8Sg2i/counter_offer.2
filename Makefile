@@ -13,9 +13,15 @@ setup:
 commitreset:
 	git reset --soft HEAD^
 
-.PHONY: cocoa
-cocoa:
-	cd ios
-	rm Podfile.lock
-	pod install --repo-update
-	flutter clean
+# .PHONY: cocoa
+# cocoa:
+# 	cd ios
+# 	rm Podfile.lock
+# 	pod install --repo-update
+# 	flutter clean
+
+.PHONY: killcache
+killcache:
+	xcrun --kill-cache
+	rm -rf ~/Library/Developer/CoreSimulator/Caches/*
+	rm -rf ~/Library/Developer/Xcode/DerivedData/*
