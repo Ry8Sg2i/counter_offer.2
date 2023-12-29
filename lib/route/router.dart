@@ -4,7 +4,6 @@ import 'package:counterofferv1/model/user1.dart';
 import 'package:counterofferv1/src/app.dart';
 import 'package:counterofferv1/src/onesheet/home_page.dart';
 import 'package:counterofferv1/src/onesheet/newaccount.dart';
-import 'package:counterofferv1/src/screen/setting/accoumt/colorswich.dart';
 import 'package:counterofferv1/src/screen/userlist.dart';
 import 'package:counterofferv1/src/screen/register/edituser.dart';
 import 'package:counterofferv1/src/screen/register/otheruser.dart';
@@ -96,12 +95,6 @@ final GoRouter goRouter = GoRouter(
             return const SettingPage();
           },
           routes: <RouteBase>[
-            GoRoute(
-              path: 'colorsetting',
-              builder: (BuildContext context, GoRouterState state) {
-                return const Colorswich();
-              },
-            ),
             GoRoute(
               path: 'accountsetting',
               builder: (BuildContext context, GoRouterState state) {
