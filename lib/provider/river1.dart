@@ -81,8 +81,3 @@ final user1Provider = FutureProvider.autoDispose.family<User1, String>((ref, uid
   final userData = User1.fromJson(response.data()!);
   return userData;
 });
-
-// デフォルトはシステム設定に従う(ThemeMode.system)ようにしておくといいかも
-final themeModeProvider = StateProvider<ThemeMode>(
-  (ref)=>ThemeMode.system
-);
