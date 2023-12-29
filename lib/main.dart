@@ -1,5 +1,4 @@
 import 'package:counterofferv1/colors/color_schemes.g.dart';
-import 'package:counterofferv1/provider/river1.dart';
 import 'package:counterofferv1/route/router.dart';
 import 'package:flutter/material.dart';
 // ignore: depend_on_referenced_packages
@@ -21,7 +20,6 @@ class CounterOffer extends ConsumerWidget {
   
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final themeMode = ref.watch(themeModeProvider.notifier);
     return MaterialApp.router(
       // アプリ名
         darkTheme: ThemeData(
@@ -40,7 +38,6 @@ class CounterOffer extends ConsumerWidget {
             surfaceTintColor: Colors.transparent,
           ),
         ),
-        themeMode: themeMode.state,
         routerConfig: goRouter,
     );
   }
