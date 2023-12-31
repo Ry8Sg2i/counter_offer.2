@@ -26,4 +26,4 @@ killcache:
 	rm -rf ~/Library/Developer/CoreSimulator/Caches/*
 	rm -rf ~/Library/Developer/Xcode/DerivedData/*
 
-# git commit --amend --date="Sun Dec 22 00:00:00 2023 +0900"
+# git commit --amend --date="Mon Jan 1 00:00:00 2024 +0900"
