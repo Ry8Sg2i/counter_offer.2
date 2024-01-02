@@ -75,7 +75,7 @@ class LoginPage extends ConsumerWidget {
                         password: password.text,
                       );
                       // ignore: use_build_context_synchronously
-                      context.go('/main');
+                      context.go('/account');
                     } on FirebaseAuthException {
                       // Providerから値を更新
                       ref.read(infoTextProvider.notifier).state =
