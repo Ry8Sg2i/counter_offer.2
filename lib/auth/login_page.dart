@@ -44,13 +44,12 @@ class LoginPage extends ConsumerWidget {
                   ),
                   onPressed: () async {
                     try {
-                      final FirebaseAuth auth = FirebaseAuth.instance;
-                      final result = await auth.createUserWithEmailAndPassword(
-                        email: email.text,
-                        password: password.text,
-                      );
-                      // ユーザー情報を更新
-                      ref.read(userProvider.notifier).state = result.user;
+                      final User? user = (await FirebaseAuth.instance
+                            .createUserWithEmailAndPassword(
+                                email: email.text,
+                                password: password.text))
+                        .user;
+                    if (user != null) {}
                       // ignore: use_build_context_synchronously
                       GoRouter.of(context).pushReplacement('/login/newaccount');
                     } catch (e) {
@@ -69,13 +68,13 @@ class LoginPage extends ConsumerWidget {
                   child: const Text('ログイン',style: TextStyle(color: Colors.black)),
                   onPressed: () async {
                     try {
-                      final FirebaseAuth auth = FirebaseAuth.instance;
-                      await auth.signInWithEmailAndPassword(
-                        email: email.text,
-                        password: password.text,
-                      );
+                      final User? user = (await FirebaseAuth.instance
+                            .signInWithEmailAndPassword(
+                                email: email.text,
+                                password: password.text))
+                        .user;
                       // ignore: use_build_context_synchronously
-                      context.go('/account');
+                      if (user != null) context.go('/account');
                     } on FirebaseAuthException {
                       // Providerから値を更新
                       ref.read(infoTextProvider.notifier).state =
