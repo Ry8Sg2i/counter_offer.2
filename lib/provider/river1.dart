@@ -4,6 +4,12 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+final authStateChangesProvider = StreamProvider.autoDispose<User?>((ref) {
+  // 以下のプロバイダからFirebaseAuthを取得します。
+  final firebaseAuth = ref.watch(firebaseAuthProvider);
+  // Stream<User?> を返すメソッドを呼び出す。
+  return firebaseAuth.authStateChanges();
+});
 // ユーザー情報の受け渡しを行うためのProvider
 final userProvider = StateProvider.autoDispose((ref) {
   return FirebaseAuth.instance.currentUser;
