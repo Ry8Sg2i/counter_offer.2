@@ -8,10 +8,10 @@ import 'package:counterofferv1/src/screen/userlist.dart';
 import 'package:counterofferv1/src/screen/register/edituser.dart';
 import 'package:counterofferv1/src/screen/register/otheruser.dart';
 import 'package:counterofferv1/src/screen/register/my_page.dart';
-import 'package:counterofferv1/src/screen/setting/accoumt/account.dart';
-import 'package:counterofferv1/src/screen/setting/accoumt/deleteAccount_page.dart';
-import 'package:counterofferv1/src/screen/setting/accoumt/logout_page.dart';
-import 'package:counterofferv1/src/screen/setting/setting_page.dart';
+import 'package:counterofferv1/src/screen/settingpage/accoumt/account.dart';
+import 'package:counterofferv1/src/screen/settingpage/accoumt/deleteAccount_page.dart';
+import 'package:counterofferv1/src/screen/settingpage/accoumt/logout_page.dart';
+import 'package:counterofferv1/src/screen/settingpage/setting_page.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
