@@ -27,8 +27,7 @@ class Navbar extends StatelessWidget {
             label: 'Account'
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.settings,
-            color:Colors.black),
+            icon: Icon(Icons.settings),
             label: 'Setting'
           ),
         ],
