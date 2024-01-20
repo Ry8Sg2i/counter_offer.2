@@ -137,7 +137,7 @@ class Featured extends ConsumerWidget {
                       ),
                       user1Data.when(data: (data) {
                         return ListTile(
-                            leading: const Icon(Icons.account_box, color:Colors.black),
+                            leading: const Icon(Icons.account_box),
                             title: const Text("YourGithubID"),
                             subtitle: Text(data.githubid),
                           );
