@@ -117,7 +117,7 @@ class Featured extends ConsumerWidget {
                     children: [
                       user1Data.when(data: (data) {
                         return ListTile(
-                            leading: const Icon(Icons.email, color:Colors.black),
+                            leading: const Icon(Icons.email),
                             title: const Text("YourEmail"),
                             subtitle: Text(data.emailForCompany),
                           );
