@@ -87,3 +87,5 @@ final user1Provider = FutureProvider.autoDispose.family<User1, String>((ref, uid
   final userData = User1.fromJson(response.data()!);
   return userData;
 });
+
+final themeModeProvider = StateProvider<ThemeMode>((ref)=>ThemeMode.system);
