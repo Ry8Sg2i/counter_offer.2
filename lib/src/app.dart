@@ -18,8 +18,7 @@ class Navbar extends StatelessWidget {
         type: BottomNavigationBarType.fixed,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(Icons.home,
-            color:Colors.black),
+            icon: Icon(Icons.home,),
             label: 'Main'
           ),
           BottomNavigationBarItem(
