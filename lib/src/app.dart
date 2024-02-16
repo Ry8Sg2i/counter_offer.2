@@ -23,8 +23,7 @@ class Navbar extends StatelessWidget {
           ),
           BottomNavigationBarItem(
             icon: Icon(
-            Icons.account_box,
-            color:Colors.black),
+            Icons.account_box),
             label: 'Account'
           ),
           BottomNavigationBarItem(
