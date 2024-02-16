@@ -30,7 +30,7 @@ class UserListPage extends ConsumerWidget {
                   children: query.map((document) {
                     return Card(
                       child: ListTile(
-                        leading: const Icon(Icons.account_circle, color:Colors.black),
+                        leading: const Icon(Icons.account_circle),
                         title: Text(document.name),
                         subtitle: Text(document.email),
                         onTap: () {
