@@ -39,12 +39,6 @@ class Colorsetting extends ConsumerWidget {
           ),
         ],
       ),
-      body: const Center(
-        child: Text(
-          "設定に応じてfontColorが入れ替わる", 
-          style: TextStyle(fontSize: 30.0),
-        ),
-      ),
     );
   }
 }
