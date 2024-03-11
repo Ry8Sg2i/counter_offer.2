@@ -19,11 +19,6 @@ final firebaseAuthProvider = StateProvider.autoDispose((ref) {
   return FirebaseAuth.instance;
 });
 
-// プロバイダを使用して、FirebaseAuth インスタンスにアクセスします。
-final firebaseAuthProvider1 = Provider<FirebaseAuth>((ref) {
-  return FirebaseAuth.instance;
-});
-
 final uidProvider = StateProvider.autoDispose((ref) {
   return FirebaseAuth.instance.currentUser?.uid ?? '';
 });
