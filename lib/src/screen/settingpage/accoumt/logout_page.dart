@@ -25,7 +25,7 @@ class logoutSetting extends ConsumerWidget {
               children: [
                 Container(
                   margin: const EdgeInsets.only(top: 10,bottom: 10,right: 10,left: 10,),
-                  child: Text("現在のアカウント${user.email}\nアカウントからログアウトします。"),
+                  child: Text("現在のアカウント${user.email}アカウントからログアウトします。"),
                 ),
               ],
             ),
