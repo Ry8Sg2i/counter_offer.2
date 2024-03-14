@@ -11,6 +11,8 @@ final authStateChangesProvider = StreamProvider.autoDispose<User?>((ref) {
   return firebaseAuth.authStateChanges();
 });
 // ユーザー情報の受け渡しを行うためのProvider
+
+//現在のユーザーの取得
 final userProvider = StateProvider.autoDispose((ref) {
   return FirebaseAuth.instance.currentUser;
 });
