@@ -53,6 +53,7 @@ dependencies:
   pedantic_mono: ^1.24.0+1
   flutter_native_splash: ^2.3.7
   shared_preferences: ^2.2.2
+  firebase_core: ^2.27.0
 
 flutter_native_splash:
   image: "images/counter2.png" 
