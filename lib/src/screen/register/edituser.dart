@@ -1,4 +1,3 @@
-// ignore_for_file: file_names
 import 'package:counterofferv1/compornents/appbar.dart';
 import 'package:counterofferv1/model/user1.dart';
 import 'package:flutter/material.dart';
