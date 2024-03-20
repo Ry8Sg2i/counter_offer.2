@@ -1,5 +1,3 @@
-// ignore: unused_import
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:counterofferv1/compornents/appbar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
