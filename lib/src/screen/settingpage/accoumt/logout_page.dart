@@ -1,4 +1,3 @@
-// ignore_for_file: camel_case_types
 import 'package:counterofferv1/compornents/appbar.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -6,8 +5,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:counterofferv1/provider/river1.dart';
 
-class logoutSetting extends ConsumerWidget {
-  const logoutSetting({super.key});
+class LogoutSetting extends ConsumerWidget {
+  const LogoutSetting({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {

@@ -111,7 +111,7 @@ final GoRouter goRouter = GoRouter(
                 GoRoute(
                   path: 'logout',
                   builder: (BuildContext context, GoRouterState state) {
-                    return const logoutSetting();
+                    return const LogoutSetting();
                   },
                 ),
                 GoRoute(
