@@ -12,7 +12,6 @@ class deleteAccountSetting extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    // Providerから値を受け取る
     final User user = ref.watch(userProvider.notifier).state!;
 
     return Scaffold(
