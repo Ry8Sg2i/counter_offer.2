@@ -105,7 +105,7 @@ final GoRouter goRouter = GoRouter(
             GoRoute(
               path: 'accountsetting',
               builder: (BuildContext context, GoRouterState state) {
-                return const accountSetting();
+                return const AccountSetting();
               },
               routes: <RouteBase>[
                 GoRoute(
