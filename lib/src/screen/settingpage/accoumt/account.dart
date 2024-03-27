@@ -8,7 +8,6 @@ class AccountSetting extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    // Providerから値を受け取る
 
     return Scaffold(
       appBar: const AppBarComponentWidget(
