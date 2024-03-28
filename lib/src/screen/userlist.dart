@@ -5,7 +5,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:counterofferv1/provider/river1.dart';
 import 'package:go_router/go_router.dart';
 
-// ConsumerWidgetでProviderから値を受け渡す
 class UserListPage extends ConsumerWidget {
 
   const UserListPage({super.key});
