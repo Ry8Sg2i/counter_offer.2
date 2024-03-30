@@ -34,7 +34,6 @@ class deleteAccountSetting extends ConsumerWidget {
                 width: double.infinity,
                 child: TextButton(
                   onPressed: () async {
-                    // 投稿メッセージのドキュメントを削除
                     await FirebaseFirestore.instance
                         .collection('User1')
                         .doc(ref.watch(uidProvider))
