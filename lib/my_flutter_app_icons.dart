@@ -36,7 +36,6 @@ class MyFlutterApp {
   static const IconData home = IconData(0xe800, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData user = IconData(0xe801, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData logout = IconData(0xe802, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  // ignore: constant_identifier_names
-  static const IconData account_box = IconData(0xe803, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData accountbox = IconData(0xe803, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData cog_1 = IconData(0xe805, fontFamily: _kFontFam, fontPackage: _kFontPkg);
 }
